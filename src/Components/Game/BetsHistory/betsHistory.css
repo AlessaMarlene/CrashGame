@@ -1,0 +1,7 @@
+.betsHistoryContainer{
+    width: 25%
+}
+
+.btn-check:checked+.btn-outline-primary, .btn-check:checked+.btn-outline-secondary{
+    background-color: #71d8d2;
+}

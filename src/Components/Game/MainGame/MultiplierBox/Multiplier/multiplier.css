@@ -1,0 +1,11 @@
+.gameMult{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mult{
+    position: absolute;
+    bottom:40%;
+    font-size: 3rem;
+}

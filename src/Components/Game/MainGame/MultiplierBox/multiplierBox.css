@@ -1,0 +1,18 @@
+.info{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.infoContainer{
+    background-color: #5bb6b2;
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+}
+
+.infoContainer > img{
+    width: 8%;
+    height: 8%;
+}

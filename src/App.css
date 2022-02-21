@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.btn-outline-primary{
+  border-color: #75aba7;
+  color: #5b5b5b;
+}
+
+.btn-outline-primary:hover, .btn-primary{
+  background-color: #71d8d2;
+  border-color: #75aba7;
+}
+
+.btn-primary:hover{
+  background-color: #5bb6b2;
+}
+
+html, body {
+  height:100%
+}
