@@ -2,9 +2,9 @@ import { useEffect, useState, useRef } from "react";
 import './multiplier.css';
 
 const ROCKET_IMG = new Image();
-ROCKET_IMG.src = 'assets/rocket.svg';
+ROCKET_IMG.src = 'https://alessamarlene.github.io/CrashGame-public/assets/rocket.svg';
 const ROCKET_EXPLOSION_IMG = new Image();
-ROCKET_EXPLOSION_IMG.src = 'assets/rocket_explosion.svg';
+ROCKET_EXPLOSION_IMG.src = 'https://alessamarlene.github.io/CrashGame-public/assets/rocket_explosion.svg';
 
 const ROCKET_WIDTH = 15;
 const ROCKET_HEIGHT = 20;
@@ -52,19 +52,21 @@ const Multiplier = ({initializeValues, multValue, startGame, isUserRegistered, m
     }
 
     useEffect(() => {
-        if(startGame) {
-            if(multValue >= multCrashValue) {
-                multHasCrashed();
-                resetCanvas();
+        if(isUserRegistered) {
+            if(startGame) {
+                if(multValue >= multCrashValue) {
+                    multHasCrashed();
+                    resetCanvas();
+                }
+                else {
+                    increaseMultiplier();
+                    setRocketPosition({ x: rocketPosition.x + 0.5, y: rocketPosition.y - 2 });
+                    drawImagesInCanvas();
+                }
             }
             else {
-                increaseMultiplier();
-                setRocketPosition({ x: rocketPosition.x + 0.5, y: rocketPosition.y - 2 });
-                drawImagesInCanvas();
+                setTimeout(initializeValues, 5000);
             }
-        }
-        else if(isUserRegistered) {
-            setTimeout(initializeValues, 5000);
         }
     }, [multValue, startGame, isUserRegistered]);
 

@@ -10,7 +10,7 @@ const BiggestWinner = () => {
         <Card style={{ width: '18rem' }}>
             <Card.Header>A real winner!</Card.Header>
             <Card.Body>
-                <Card.Img src={'assets/winner.svg'}/>
+                <Card.Img src={'https://alessamarlene.github.io/CrashGame-public/assets/winner.svg'}/>
                 <Card.Title>{biggestWinner.name}</Card.Title>
                 <Card.Text>{biggestWinner.payout > 0 && biggestWinner.payout}</Card.Text>
             </Card.Body>

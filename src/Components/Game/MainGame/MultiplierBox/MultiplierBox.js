@@ -68,7 +68,7 @@ const MultiplierBox = ({isUserRegistered, startOfGame, multIncrement, provideMai
             {
                 !startOfGame.startGame && 
                     <div className="infoContainer">
-                        <img src={'assets/info.svg'}/>
+                        <img src={'https://alessamarlene.github.io/CrashGame-public/assets/info.svg'}/>
                         <p className="info">5 seconds until the next round. Be sure to bet on time!</p>
                     </div>
             }
