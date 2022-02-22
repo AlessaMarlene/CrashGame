@@ -1,1 +1,1 @@
-Proyecto deployado -> https://github.com/AlessaMarlene/CrashGame
+Proyecto deployado -> https://alessamarlene.github.io/CrashGame-public/
